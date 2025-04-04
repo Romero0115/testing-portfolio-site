@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--grey);
-    margin-bottom: 2rem;
     color: var(--white);
 }
 
@@ -31,6 +30,11 @@
 
 #navbarContainer {
     padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 #navbarContainer > div {
@@ -39,4 +43,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+
+#languageSelect {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 5px;
 }

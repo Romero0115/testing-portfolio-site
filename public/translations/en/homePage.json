@@ -1,0 +1,17 @@
+{
+    "section1": {
+        "title": "Welcome to my portfolio test page",
+        "description": "The purpose of this site is to execute and showcase automated test scripts",
+        "disclaimer": "⚠️ This is not a real site ⚠️"
+    },
+    "section2": {
+        "title": "Turning ideas into automated reality, one test at a time.",
+        "linkedIn": "Visit my LinkedIn to learn more about my work"
+    },
+    "section3": {
+        "title": "Contact Information:",
+        "mail": "matiasrome99.psi@gmail.com",
+        "phone": "+598 98158233",
+        "location": "Uruguay"
+    }
+}

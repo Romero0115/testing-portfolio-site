@@ -1,7 +1,9 @@
 import React from "react";
 import './mobileView.css';
+import { useTranslation } from "react-i18next";
 
 const MobileView = () => {
+    const { t } = useTranslation("mobileView");
 
     return (
         <div style={{
@@ -14,7 +16,7 @@ const MobileView = () => {
             backgroundColor: '#f8d7da',
             color: '#721c24'
         }}>
-            <h2>⚠️ This site is only available on desktop resolutions. Please log in from your PC. ⚠️</h2>
+            <h2>{t("alert")}</h2>
         </div>
     );
 };

@@ -1,11 +1,12 @@
 :root {
   /* Colors */
   --grey: #29303b;
+  --lightGrey: #f4f4f4;
   --red: #ec5252;
   --white: #ffffff;
   
   /* Fonts */
-  --main-font: Arial;
+  --main-font: Arial, sans-serif;
 }
 
 * {
@@ -27,4 +28,5 @@ body {
 
 body {
   overflow-x: hidden;
+  background-color: #f4f4f4;
 }
