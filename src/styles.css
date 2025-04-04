@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --grey: #29303b;
+  --red: #ec5252;
+  --white: #ffffff;
+  
+  /* Fonts */
+  --main-font: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  font-family: var(--main-font);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
