@@ -1,0 +1,20 @@
+{
+    "section1": {
+        "title": "Bienvenido a la página de prueba de mi portafolio",
+        "description": "El propósito de este sitio es ejecutar y mostrar scripts de pruebas automatizadas",
+        "disclaimer": "⚠️ Este no es un sitio real ⚠️"
+    },
+    "section2": {
+        "title": "Transformando ideas en realidad automatizada, una prueba a la vez.",
+        "linkedIn": "Visita mi LinkedIn para conocer más sobre mi",
+        "gitHub": "Ver mi perfil de GitHub"
+    },
+    "section3": {
+        "title": "Información de contacto",
+        "mailLabel": "Correo:",
+        "mail": "matiasrome99.psi@gmail.com",
+        "phoneLabel": "Teléfono:",
+        "phone": "+598 98158233",
+        "location": "Uruguay"
+    }
+}

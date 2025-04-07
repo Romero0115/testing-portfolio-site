@@ -1,0 +1,107 @@
+#signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+#signup-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+    padding: 2rem;
+    width: 100%;
+    max-width: 25rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 5rem;
+}
+
+#signup-card > h2 {
+    color: var(--grey);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#username-group,
+#email-group,
+#password-group,
+#repeat-password-group,
+#token-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#username-group > label,
+#email-group > label,
+#password-group > label,
+#repeat-password-group > label,
+#token-group > label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--lightGrey);
+}
+
+#username-group > input,
+#email-group > input,
+#password-group > input,
+#repeat-password-group > input,
+#token-group > input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--lightGrey);
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#username-group > input:focus,
+#email-group > input:focus,
+#password-group > input:focus,
+#repeat-password-group > input:focus,
+#token-group > input:focus {
+    outline: none;
+    border-color: var(--lightBlue);
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+#token-info {
+    margin-top: 5px;
+    font-size: 12px;
+    color: var(--lightGrey);
+}
+
+#btn-signup {
+    background-color: var(--lightBlue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#btn-signup:hover {
+    background-color: #2980b9;
+}
+
+#login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--lightGrey);
+}
+
+#login-link > a {
+    color: var(--lightBlue);
+    text-decoration: none;
+}
+
+#login-link > a:hover {
+    text-decoration: underline;
+}

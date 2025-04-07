@@ -1,0 +1,53 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+#title {
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+#welcomeTxt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#loginBtn {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; 
+    font-weight: bold;
+    background-color: var(--red);
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+#navbarContainer {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#navbarContainer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#languageSelect {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

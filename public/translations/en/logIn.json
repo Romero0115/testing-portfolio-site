@@ -1,0 +1,16 @@
+{
+    "title": "Log in",
+    "usernameLabel": "Email",
+    "usernamePlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Log in",
+    "signUpLabel": "Don't have an account?",
+    "signUpLink": "Sign up",
+    "visitorTitle": "Welcome, Visitor!",
+    "visitorMessage": "If you're visiting and want to see more, try with:",
+    "visitorEmailLabel": "Email:",
+    "visitorEmail": "admin@gmail.com",
+    "visitorPasswordLabel": "Password:",
+    "visitorPassword": "123456"
+}

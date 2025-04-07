@@ -1,0 +1,34 @@
+#not-found-container {
+    text-align: center;
+}
+
+#not-found-container>div {
+    background-color: var(--white);
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#not-found-container>div>h1 {
+    font-size: 120px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+#not-found-container>div>p {
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--lightGrey);
+    margin-bottom: 30px;
+}
+
+#not-found-container>div>a {
+    font-size: 16px;
+    color: var(--lightBlue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#not-found-container>div>a:hover {
+    text-decoration: underline;
+}

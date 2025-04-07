@@ -1,0 +1,17 @@
+{
+    "title": "Sign up",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "repeatPasswordLabel": "Repeat Password",
+    "repeatPasswordPlaceholder": "Repeat your password",
+    "tokenLabel": "Token",
+    "tokenPlaceholder": "Enter the token",
+    "tokenInfo": "Request to the site owner",
+    "signupButton": "Sign Up",
+    "loginLabel": "Already have an account?",
+    "loginLink": "Log In"
+}
