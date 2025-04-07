@@ -1,0 +1,16 @@
+{
+    "title": "Iniciar sesión",
+    "usernameLabel": "Correo",
+    "usernamePlaceholder": "Ingresa tu correo",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingresa tu contraseña",
+    "loginButton": "Iniciar sesión",
+    "signUpLabel": "¿No tienes una cuenta?",
+    "signUpLink": "Regístrate",
+    "visitorTitle": "¡Bienvenido, visitante!",
+    "visitorMessage": "Si estás de visita y quieres ver qué más hay, intenta con:",
+    "visitorEmailLabel": "Correo:",
+    "visitorEmail": "admin@gmail.com",
+    "visitorPasswordLabel": "Contraseña:",
+    "visitorPassword": "123456"
+}

@@ -1,10 +1,12 @@
 :root {
   /* Colors */
   --grey: #29303b;
-  --lightGrey: #f4f4f4;
+  --lightGrey: #555;
+  --lighterGrey: #f4f4f4;
+  --lightBlue: #3498db;
   --red: #ec5252;
   --white: #ffffff;
-  
+
   /* Fonts */
   --main-font: Arial, sans-serif;
 }

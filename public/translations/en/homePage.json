@@ -6,11 +6,14 @@
     },
     "section2": {
         "title": "Turning ideas into automated reality, one test at a time.",
-        "linkedIn": "Visit my LinkedIn to learn more about my work"
+        "linkedIn": "Visit my LinkedIn to learn more about my work",
+        "gitHub": "See my GitHub profile"
     },
     "section3": {
-        "title": "Contact Information:",
+        "title": "Contact Information",
+        "mailLabel": "Email:",
         "mail": "matiasrome99.psi@gmail.com",
+        "phoneLabel": "Phone:",
         "phone": "+598 98158233",
         "location": "Uruguay"
     }
