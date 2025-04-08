@@ -33,7 +33,7 @@ function App() {
     isDesktop ? (
       <div className="App">
         <Provider store={store}>
-          <ToastContainer />
+          <ToastContainer/>
           <BrowserRouter>
             <Navbar />
             <Routes>

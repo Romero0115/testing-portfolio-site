@@ -1,16 +1,26 @@
 import React from "react";
 import './navbar.css';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { SetLoggedFalse } from "../../features/loggerSlice.js";
+import { toastSuccess } from "../../utils/toast.js";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation("navbar");
   const logged = useSelector(state => state.logger.isLogged);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLanguageChange = (event) => {
     i18n.changeLanguage(event.target.value);
+  };
+
+  const handleLogout = () => {
+    dispatch(SetLoggedFalse());
+    localStorage.removeItem("username");
+    navigate("/");
+    toastSuccess(t("toastLogout"));
   };
 
   const navigation = logged ? (
@@ -21,7 +31,7 @@ const Navbar = () => {
         <NavLink to="/Shop">{t("shop")}</NavLink>
         <NavLink to="/Cart">{t("cart")}</NavLink>
       </nav>
-      <button>{t("logout")}</button>
+      <button onClick={handleLogout}>{t("logout")}</button>
     </div>
   ) : (
     <div>

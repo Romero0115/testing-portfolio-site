@@ -6,5 +6,6 @@
     "logout": "Cerrar sesión",
     "welcome": "¡Bienvenido! 🙌 Por favor, inicia sesión.",
     "login": "Iniciar sesión",
-    "testingSite": "Sitio de Pruebas 🌐"
+    "testingSite": "Sitio de Pruebas 🌐",
+    "toastLogout":"¡Adiós!"
 }
