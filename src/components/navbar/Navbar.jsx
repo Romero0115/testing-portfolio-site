@@ -27,11 +27,11 @@ const Navbar = () => {
     <div>
       <nav id="navbar">
         <NavLink to="/">{t("home")}</NavLink>
-        <NavLink to="/MyAccount">{t("myAccount")}</NavLink>
+        <NavLink to="/my-account">{t("myAccount")}</NavLink>
         <NavLink to="/Shop">{t("shop")}</NavLink>
         <NavLink to="/Cart">{t("cart")}</NavLink>
       </nav>
-      <button onClick={handleLogout}>{t("logout")}</button>
+      <button id="logoutButton" onClick={handleLogout}>{t("logout")}</button>
     </div>
   ) : (
     <div>
