@@ -30,28 +30,40 @@ function App() {
   }, []);
 
   return (
-    isDesktop ? (
-      <div className="App">
-        <Provider store={store}>
-          <ToastContainer/>
-          <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/log-in" element={<LogIn />} />
-              <Route path="/sign-up" element={<SignUp />} />
-              <Route path="/my-account" element={<MyAccount />} />
-              <Route path="/shop" element={<Shop />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </Provider>
-      </div>
-    ) : (
-      <MobileView />
-    )
+    <div className="App">
+      <Provider store={store}>
+        <ToastContainer />
+        <BrowserRouter>
+        <Navbar />
+          {isDesktop}
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/log-in"
+              element={isDesktop ? <LogIn /> : <MobileView />}
+            />
+            <Route
+              path="/sign-up"
+              element={isDesktop ? <SignUp /> : <MobileView />}
+            />
+            <Route
+              path="/my-account"
+              element={isDesktop ? <MyAccount /> : <MobileView />}
+            />
+            <Route
+              path="/shop"
+              element={isDesktop ? <Shop /> : <MobileView />}
+            />
+            <Route
+              path="/cart"
+              element={isDesktop ? <Cart /> : <MobileView />}
+            />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
+    </div>
   );
-}
+};
 
 export default App;

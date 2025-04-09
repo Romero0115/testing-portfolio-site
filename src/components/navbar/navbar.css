@@ -1,83 +1,128 @@
-#header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--grey);
-    color: var(--white);
+@media (min-width: 1025px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--grey);
+        color: var(--white);
+    }
+
+    #title {
+        font-size: 25px;
+        padding-left: 2rem;
+        cursor: pointer;
+    }
+
+    #authGroup {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #loginBtn {
+        all: unset;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        background-color: var(--blue);
+        border-radius: 5px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    #signupBtn {
+        all: unset;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        background-color: var(--green);
+        border-radius: 5px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    #navbarContainer {
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #navbarContainer>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #languageSelect {
+        width: fit-content;
+        height: fit-content;
+        padding: 0.4rem;
+        border-radius: 5px;
+    }
+
+    #logoutButton {
+        all: unset;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        background-color: var(--red);
+        border-radius: 5px;
+        padding: 10px 15px 10px 15px;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+    #navbar a {
+        all: unset;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #navbar a img {
+        width: 25px;
+        height: auto;
+    }
+
+    #navbar a:hover {
+        text-decoration: underline;
+    }
 }
 
-#title {
-    padding-left: 2rem;
-    cursor: pointer;
-}
+@media (max-width: 1024px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--grey);
+        color: var(--white);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-#welcomeTxt {
-    font-size: 16px;
-    font-weight: bold;
-}
+    #title {
+        font-size: 20px;
+    }
 
-#loginBtn {
-    all: unset;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    background-color: var(--red);
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-}
-
-#navbarContainer {
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-#navbarContainer>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-}
-
-#languageSelect {
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
-#logoutButton {
-    all: unset;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    background-color: var(--red);
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-}
-
-#navbar {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-#navbar a {
-    all: unset;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#navbar a:hover {
-    text-decoration: underline;
+    #languageSelect {
+        width: fit-content;
+        height: fit-content;
+        padding: 0.4rem;
+        border-radius: 5px;
+    }
 }

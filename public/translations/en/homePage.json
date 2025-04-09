@@ -1,8 +1,8 @@
 {
     "section1": {
         "title": "Welcome to my portfolio test page",
-        "description": "The purpose of this site is to execute and showcase automated test scripts",
-        "disclaimer": "⚠️ This is not a real site ⚠️"
+        "description": "This site is a fully self-developed e-commerce platform designed to provide a functional environment for running and showcasing automated test scripts. In addition to simulating a real online store, it also serves as a technical portfolio to demonstrate my skills in testing, automation, and web development.",
+        "mobileMessage": "⚠️ To access all the features of the site, please use a desktop device. ⚠️"
     },
     "section2": {
         "title": "Turning ideas into automated reality, one test at a time.",

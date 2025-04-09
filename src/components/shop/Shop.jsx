@@ -9,11 +9,11 @@ const Shop = () => {
     const logged = useSelector(state => state.logger.isLogged);
     const navigate = useNavigate();
 
-    useEffect(() => {
+/*     useEffect(() => {
         if (!logged) {
             navigate('/');
         }
-    }, [logged, navigate]);
+    }, [logged, navigate]); */
 
     return (
         <div
