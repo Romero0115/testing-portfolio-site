@@ -53,8 +53,8 @@ const Navbar = () => {
       <nav id="navbar">
         <NavLink to="/">{t("home")}</NavLink>
         <NavLink to="/my-account">{t("myAccount")}</NavLink>
-        <NavLink to="/Shop">{t("shop")}</NavLink>
-        <NavLink to="/Cart">{t("cart")}
+        <NavLink to="/shop">{t("shop")}</NavLink>
+        <NavLink to="/cart">{t("cart")}
           <img src="/media/software-testing.png" alt="Site banner" />
         </NavLink>
       </nav>
@@ -64,8 +64,8 @@ const Navbar = () => {
     <div>
       <nav id="navbar">
         <NavLink to="/">{t("home")}</NavLink>
-        <NavLink to="/Shop">{t("shop")}</NavLink>
-        <NavLink to="/Cart"><img src="/media/shopping-cart.svg" alt="Shopping cart" /></NavLink>
+        <NavLink to="/shop">{t("shop")}</NavLink>
+        <NavLink to="/cart"><img src="/media/shopping-cart.svg" alt="Shopping cart" /></NavLink>
       </nav>
       <div id="authGroup">
         <button
