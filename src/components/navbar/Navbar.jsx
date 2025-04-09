@@ -54,9 +54,7 @@ const Navbar = () => {
         <NavLink to="/">{t("home")}</NavLink>
         <NavLink to="/my-account">{t("myAccount")}</NavLink>
         <NavLink to="/shop">{t("shop")}</NavLink>
-        <NavLink to="/cart">{t("cart")}
-          <img src="/media/software-testing.png" alt="Site banner" />
-        </NavLink>
+        <NavLink to="/cart"><img src="/media/shopping-cart.svg" alt="Shopping cart" /></NavLink>
       </nav>
       <button id="logoutButton" onClick={handleLogout}>{t("logout")}</button>
     </div>
