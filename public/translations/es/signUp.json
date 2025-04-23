@@ -17,7 +17,5 @@
     "toastWeakPassword": "La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número.",
     "toastEmailExists": "Ya existe una cuenta con este correo electrónico.",
     "toastSignupSuccess": "¡Registro exitoso! Ahora puedes iniciar sesión.",
-    "toastSignupError": "Hubo un error durante el registro. Por favor, intenta de nuevo.",
-    "toastWrongUser": "Usuario incorrecto.",
-    "toastWrongPassword": "Contraseña incorrecta."
+    "toastSignupError": "Hubo un error durante el registro. Por favor, intenta de nuevo."
 }

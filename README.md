@@ -33,7 +33,7 @@ This site is a **fully self-developed e-commerce platform** designed to simulate
 
 🎨 **Frontend:** Firebase  
 🚀 **Backend (API):** Railway  
-🌱 **Database:** Supabase  
+🌱 **Database:** Railway (PostgreSQL)
 🧪 **Tests Automatizados / Automated Tests:** Cypress
 
 ------------------------------------------------------------------
