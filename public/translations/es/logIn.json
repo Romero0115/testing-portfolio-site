@@ -12,7 +12,7 @@
     "visitorEmailLabel": "Correo:",
     "visitorEmail": "admin@gmail.com",
     "visitorPasswordLabel": "Contraseña:",
-    "visitorPassword": "123456",
+    "visitorPassword": "Admin123456",
     "toastWrongUser":"Usuario no encontrado.",
     "toastWrongPassword":"Contraseña incorrecta.",
     "toastLoginSuccess":"¡Bienvenido!"
