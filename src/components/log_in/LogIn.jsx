@@ -13,7 +13,7 @@ const LogIn = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     useEffect(() => {
@@ -25,9 +25,9 @@ const LogIn = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await loginUser(username, password);
+            const response = await loginUser(email, password);
             toastSuccess(t(response.toastText)); 
-            dispatch(SetLoggedTrue(username)); 
+            dispatch(SetLoggedTrue(email)); 
             navigate("/"); 
         } catch (error) {
             toastError(t(error.message));
@@ -40,14 +40,14 @@ const LogIn = () => {
                 <div id="login-card">
                     <h2>{t("title")}</h2>
                     <form id="login-form" onSubmit={handleSubmit}>
-                        <div id="username-group">
-                            <label htmlFor="username">{t("usernameLabel")}</label>
+                        <div id="email-group">
+                            <label htmlFor="email">{t("emailLabel")}</label>
                             <input
                                 type="text"
-                                id="username"
-                                name="username"
-                                placeholder={t("usernamePlaceholder")}
-                                onChange={(e) => setUsername(e.target.value)}
+                                id="email"
+                                name="email"
+                                placeholder={t("emailPlaceholder")}
+                                onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
                         </div>
@@ -64,7 +64,7 @@ const LogIn = () => {
                         </div>
                         <button type="submit" id="btn-login">{t("loginButton")}</button>
                     </form>
-                    <p id="register-link">
+                    <p id="signup-link">
                         {t("signUpLabel")} <NavLink to="/sign-up">{t("signUpLink")}</NavLink>
                     </p>
                 </div>

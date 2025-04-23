@@ -1,13 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './signUp.css';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { toastSuccess, toastError } from "../../utils/toast.js";
+import { registerUser, loginUser } from "../../services/authService.js";
+import { SetLoggedTrue  } from "../../features/loggerSlice.js"
 
 const SignUp = () => {
     const { t } = useTranslation("signUp");
     const logged = useSelector(state => state.logger.isLogged);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [repeatPassword, setRepeatPassword] = useState("");
 
     useEffect(() => {
         if (logged) {
@@ -15,18 +24,40 @@ const SignUp = () => {
         }
     }, [logged, navigate]);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (password !== repeatPassword) {
+            toastError(t("toastPasswordMismatch"));
+            return;
+        }
+
+        try {
+            await registerUser(name, email, password);
+            toastSuccess(t("toastSignupSuccess"));
+
+            const response = await loginUser(email, password);
+            toastSuccess(t(response.toastText));
+            dispatch(SetLoggedTrue(name));
+            navigate("/");
+        } catch (error) {
+            toastError(t(error.message));
+        }
+    };
+
     return (
         <div id="signup-container">
             <div id="signup-card">
                 <h2>{t("title")}</h2>
-                <form id="signup-form">
-                    <div id="username-group">
-                        <label htmlFor="username">{t("usernameLabel")}</label>
+                <form id="signup-form" onSubmit={handleSubmit}>
+                    <div id="name-group">
+                        <label htmlFor="name">{t("nameLabel")}</label>
                         <input
                             type="text"
-                            id="username"
-                            name="username"
-                            placeholder={t("usernamePlaceholder")}
+                            id="name"
+                            name="name"
+                            placeholder={t("namePlaceholder")}
+                            onChange={(e) => setName(e.target.value)}
                             required
                         />
                     </div>
@@ -37,6 +68,7 @@ const SignUp = () => {
                             id="email"
                             name="email"
                             placeholder={t("emailPlaceholder")}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                     </div>
@@ -47,6 +79,7 @@ const SignUp = () => {
                             id="password"
                             name="password"
                             placeholder={t("passwordPlaceholder")}
+                            onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                     </div>
@@ -57,19 +90,10 @@ const SignUp = () => {
                             id="repeat-password"
                             name="repeat-password"
                             placeholder={t("repeatPasswordPlaceholder")}
+                            onChange={(e) => setRepeatPassword(e.target.value)}
                             required
                         />
-                    </div>
-                    <div id="token-group">
-                        <label htmlFor="token">{t("tokenLabel")}</label>
-                        <input
-                            type="text"
-                            id="token"
-                            name="token"
-                            placeholder={t("tokenPlaceholder")}
-                            required
-                        />
-                        <p id="token-info">{t("tokenInfo")}</p>
+                        <p id="password-info">{t("passwordInfo")}</p>
                     </div>
                     <button type="submit" id="btn-signup">{t("signupButton")}</button>
                 </form>

@@ -1,7 +1,7 @@
 {
     "title": "Log in",
-    "usernameLabel": "Email",
-    "usernamePlaceholder": "Enter your email",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
     "passwordLabel": "Password",
     "passwordPlaceholder": "Enter your password",
     "loginButton": "Log in",
@@ -13,7 +13,7 @@
     "visitorEmail": "admin@gmail.com",
     "visitorPasswordLabel": "Password:",
     "visitorPassword": "123456",
-    "toastWrongUser": "User not found",
-    "toastWrongPassword": "Incorrect password",
+    "toastWrongUser": "User not found.",
+    "toastWrongPassword": "Wrong password.",
     "toastLoginSuccess": "Welcome!"
 }
