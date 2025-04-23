@@ -37,7 +37,6 @@ const SignUp = () => {
             toastSuccess(t("toastSignupSuccess"));
 
             const response = await loginUser(email, password);
-            toastSuccess(t(response.toastText));
             dispatch(SetLoggedTrue(name));
             navigate("/");
         } catch (error) {
