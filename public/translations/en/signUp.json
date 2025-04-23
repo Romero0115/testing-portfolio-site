@@ -1,17 +1,21 @@
 {
     "title": "Sign up",
-    "usernameLabel": "Username",
-    "usernamePlaceholder": "Enter your username",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
     "emailLabel": "Email",
     "emailPlaceholder": "Enter your email",
     "passwordLabel": "Password",
     "passwordPlaceholder": "Enter your password",
     "repeatPasswordLabel": "Repeat Password",
     "repeatPasswordPlaceholder": "Repeat your password",
-    "tokenLabel": "Token",
-    "tokenPlaceholder": "Enter the token",
-    "tokenInfo": "Request to the site owner",
+    "passwordInfo": "The password must be at least 8 characters long and include an uppercase letter, a lowercase letter, and a number.",
     "signupButton": "Sign Up",
     "loginLabel": "Already have an account?",
-    "loginLink": "Log In"
+    "loginLink": "Log In",
+    "toastInvalidName": "Name cannot contain special characters or numbers.",
+    "toastInvalidEmail": "Please enter a valid email address.",
+    "toastWeakPassword": "Password must be at least 8 characters long, with one uppercase letter, one lowercase letter, and one number.",
+    "toastEmailExists": "An account with this email already exists.",
+    "toastSignupSuccess": "Signup successful! You can now log in.",
+    "toastSignupError": "There was an error during signup. Please try again."
 }

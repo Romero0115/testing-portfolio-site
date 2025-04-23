@@ -1,7 +1,7 @@
 {
     "title": "Iniciar sesión",
-    "usernameLabel": "Correo",
-    "usernamePlaceholder": "Ingresa tu correo",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "Ingresa tu correo",
     "passwordLabel": "Contraseña",
     "passwordPlaceholder": "Ingresa tu contraseña",
     "loginButton": "Iniciar sesión",
@@ -12,5 +12,8 @@
     "visitorEmailLabel": "Correo:",
     "visitorEmail": "admin@gmail.com",
     "visitorPasswordLabel": "Contraseña:",
-    "visitorPassword": "123456"
+    "visitorPassword": "123456",
+    "toastWrongUser":"Usuario no encontrado.",
+    "toastWrongPassword":"Contraseña incorrecta.",
+    "toastLoginSuccess":"¡Bienvenido!"
 }

@@ -1,19 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './homePage.css';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
     const { t } = useTranslation("homePage");
     const logged = useSelector(state => state.logger.isLogged);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth > 1024);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         if (!logged) {
             navigate('/');
         }
     }, [logged, navigate]);
+
+    const mobileMessage = !isDesktop ? (
+        <div id="mobileMessageContainer">
+            <p id="mobileMessage">{t('section1.mobileMessage')}</p>
+        </div>
+    ) : (
+        <div></div>
+    );
 
     return (
         <main>
@@ -24,6 +41,7 @@ const HomePage = () => {
                 <article>
                     <h2>{t("section1.title")}</h2>
                     <p>{t("section1.description")}</p>
+                    {mobileMessage}
                 </article>
             </section>
             <div>

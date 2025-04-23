@@ -16,7 +16,25 @@ const MyAccount = () => {
     }, [logged, navigate]);
 
     return (
-        <div>My Account</div>
+        <div
+            style={{
+                background: "#fdf6e3",
+                color: "#333",
+                fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+                textAlign: "center",
+                padding: "1rem",
+                flexDirection: "column",
+            }}
+        >
+            <h1 style={{ fontSize: "3rem" }}>🚧 Work in progress... 👷‍♀️</h1>
+            <p style={{ fontSize: "1.5rem", marginTop: "1rem", color: "#777" }}>
+                This section is not quite ready yet, but it's coming soon! ⏳💻
+            </p>
+        </div>
     );
 };
 

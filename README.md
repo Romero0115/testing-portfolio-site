@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# 🎨 Portfolio Frontend – Matías Romero
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 🇪🇸 Interfaz web de mi portfolio personal, conectada a una API propia y diseñada para pruebas automatizadas con Cypress.  
+> 🇬🇧 Web interface for my personal portfolio, connected to a custom API and designed for automated testing with Cypress.
 
-## Available Scripts
+------------------------------------------------------------------
 
-In the project directory, you can run:
+## 📌 Descripción / Description
 
-### `npm start`
+### 🇪🇸 Español
+Este sitio es una **plataforma de e-commerce completamente desarrollada por mí**, pensada para simular una tienda online real y, al mismo tiempo, servir como entorno funcional para ejecutar y mostrar scripts de pruebas automatizadas. Forma parte de mi portfolio técnico y está diseñada para reflejar mis habilidades en testing, automatización y desarrollo web.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🇬🇧 English
+This site is a **fully self-developed e-commerce platform** designed to simulate a real online store while providing a functional environment for running and showcasing automated test scripts. It also serves as a technical portfolio to demonstrate my skills in testing, automation, and web development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+------------------------------------------------------------------
 
-### `npm test`
+## 🛠 Tecnologías / Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend Framework:** React 19 + React DOM  
+- **Routing:** React Router DOM  
+- **State Management:** Redux Toolkit + React Redux  
+- **Internationalization (i18n):** i18next, i18next-browser-languagedetector, i18next-http-backend, react-i18next  
+- **Testing Tools:** Testing Library (React, DOM, Jest-DOM, User Event)  
+- **User Feedback:** React Toastify  
+- **Performance & Analytics:** Web Vitals  
+- **Environment Configuration:** dotenv  
+- **Build Toolchain:** React Scripts (CRA)
 
-### `npm run build`
+------------------------------------------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌐 Despliegue / Deployment
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🎨 **Frontend:** Firebase  
+🚀 **Backend (API):** Railway  
+🌱 **Database:** Supabase  
+🧪 **Tests Automatizados / Automated Tests:** Cypress
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+------------------------------------------------------------------
 
-### `npm run eject`
+## 👨‍💻 Autor / Author 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Matías Romero**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📧 Email: [matiasrome99.psi@gmail.com](mailto:matiasrome99.psi@gmail.com)  
+📱 Teléfono / Phone: [+598 98158233](https://wa.me/59898158233)  
+🔗 [LinkedIn](https://www.linkedin.com/in/matias-romero-qa-testing/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+------------------------------------------------------------------
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📃 Licencia / License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © 2025 – Matías Romero

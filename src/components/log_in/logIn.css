@@ -34,13 +34,13 @@
     font-size: 24px;
 }
 
-#username-group,
+#email-group,
 #password-group {
     margin-bottom: 15px;
     text-align: left;
 }
 
-#username-group > label,
+#email-group > label,
 #password-group > label {
     font-weight: bold;
     display: block;
@@ -49,7 +49,7 @@
     color: var(--lightGrey);
 }
 
-#username-group > input,
+#email-group > input,
 #password-group > input {
     width: 100%;
     padding: 10px;
@@ -59,7 +59,7 @@
     box-sizing: border-box;
 }
 
-#username-group > input:focus,
+#email-group > input:focus,
 #password-group > input:focus {
     outline: none;
     border-color: var(--lightBlue);
@@ -82,18 +82,18 @@
     background-color: #2980b9;
 }
 
-#register-link {
+#signup-link {
     margin-top: 15px;
     font-size: 14px;
     color: var(--lightGrey);
 }
 
-#register-link > a {
+#signup-link > a {
     color: var(--lightBlue);
     text-decoration: none;
 }
 
-#register-link > a:hover {
+#signup-link > a:hover {
     text-decoration: underline;
 }
 

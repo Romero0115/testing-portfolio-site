@@ -3,9 +3,18 @@
   --grey: #29303b;
   --lightGrey: #555;
   --lighterGrey: #f4f4f4;
+  --blue: #007BFF;
   --lightBlue: #3498db;
+  --green: #28A745;
+  --lightGreen: #5faf72;
   --red: #ec5252;
   --white: #ffffff;
+
+  /* Toast Colors */
+    --error: #ff9ea8;    
+    --success: #abffbf;  
+    --warning: #fae3a0;  
+    --info: #9af2ff;       
 
   /* Fonts */
   --main-font: Arial, sans-serif;
